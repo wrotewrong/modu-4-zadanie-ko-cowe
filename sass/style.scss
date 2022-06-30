@@ -1,0 +1,35 @@
+/* Variables */
+
+$font-one: 'Roboto', sans-serif;
+$font-two: 'Roboto Slab', serif;
+$font-three: 'Smooch', cursive;
+
+$color-one: #ffbd33;
+$color-two: #000;
+$color-three: #fff;
+
+/* Global */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: font-one;
+}
+
+nav,
+.splash {
+  color: $color-three;
+}
+
+section,
+footer {
+  color: $color-two;
+}
+
+h3 {
+  text-transform: uppercase;
+}

@@ -1,3 +1,27 @@
+/* Variables */
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: font-one;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+nav,
+.splash {
+  color: #fff;
+}
+
+section,
+footer {
+  color: #000;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBVUEsV0FBQTtBQUVBOzs7RUFHRSxzQkFBQTtBQ1RGOztBRFlBO0VBQ0UscUJBQUE7QUNURjs7QURZQTs7RUFFRSxXQWhCWTtBQ09kOztBRFlBOztFQUVFLFdBdEJVO0FDYVo7O0FEWUE7RUFDRSx5QkFBQTtBQ1RGIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
