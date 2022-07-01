@@ -19,7 +19,7 @@ $color-three: #fff;
 }
 
 body {
-  font-family: font-one;
+  line-height: 1.7;
 }
 
 .container {
@@ -38,12 +38,29 @@ footer {
   color: $color-two;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-two;
+}
+
 h3 {
   text-transform: uppercase;
 }
 
+p {
+  font-family: $font-one;
+}
+
 ul {
   list-style-type: none;
+}
+
+.splash,
+.services,
+.portfolio {
+  margin-bottom: 100px;
 }
 
 /* Nav */
@@ -81,6 +98,7 @@ nav {
     }
   }
   .inner-nav {
+    line-height: 1.7;
     display: none;
     position: absolute;
     text-align: center;
@@ -96,6 +114,7 @@ nav {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   &::after {
     content: '';
     height: 100%;
@@ -114,12 +133,11 @@ nav {
     z-index: 2;
     text-align: center;
     h1 {
-      font-family: $font-two;
       font-size: 5rem;
       padding: 30px 0 80px 0;
     }
     h2 {
-      font-family: $font-two;
+      font-size: 2.5rem;
     }
     a {
       background: $color-one;
@@ -131,6 +149,102 @@ nav {
       font-family: $font-one;
       letter-spacing: 2px;
       border-radius: 5px;
+    }
+  }
+}
+
+/* Services */
+
+.services-flex {
+  .services-title {
+    padding: 20px 0;
+    text-align: center;
+    h3 {
+      font-size: 2rem;
+    }
+  }
+  .services-items {
+    text-align: center;
+    .service-item {
+      padding: 15px;
+    }
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+  i {
+    box-sizing: content-box;
+    background: $color-three;
+    border: 5px solid $color-one;
+    color: $color-one;
+    height: 75px;
+    width: 75px;
+    font-size: 30px;
+    border-radius: 50%;
+    line-height: 75px;
+    margin: 40px 0;
+  }
+}
+
+/* Portfolio */
+
+.portfolio {
+  background: #ddd;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  margin-bottom: 0;
+  .portfolio-title {
+    padding: 20px 0;
+    text-align: center;
+    h3 {
+      font-size: 2rem;
+    }
+  }
+  .portfolio-items {
+    .portfolio-item {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+      height: 400px;
+      text-align: center;
+      h4,
+      p {
+        background: $color-three;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+/* Footer */
+
+.footer-flex {
+  position: relative;
+  height: 75px;
+  p {
+    line-height: 75px;
+  }
+  .icons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    i {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      color: $color-three;
+      background: $color-two;
+      line-height: 50px;
+      font-size: 30px;
+      text-align: center;
     }
   }
 }
