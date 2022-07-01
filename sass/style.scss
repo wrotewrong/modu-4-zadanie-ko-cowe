@@ -75,7 +75,6 @@ nav {
   .flex-nav {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
     flex-direction: row;
   }
   p {
@@ -245,6 +244,40 @@ nav {
       line-height: 50px;
       font-size: 30px;
       text-align: center;
+    }
+  }
+}
+
+@media (max-width: 612px) {
+  nav {
+    .flex-nav {
+      align-items: center;
+      flex-direction: column;
+    }
+    p {
+      line-height: 30px;
+      font-size: 30px;
+    }
+    .outer-nav {
+      li {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      line-height: 50px;
+    }
+    .icons {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+      padding-bottom: 10px;
     }
   }
 }
