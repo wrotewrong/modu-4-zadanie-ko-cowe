@@ -14,10 +14,18 @@ $color-three: #fff;
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: font-one;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
 }
 
 nav,
@@ -32,4 +40,97 @@ footer {
 
 h3 {
   text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Nav */
+
+nav {
+  margin-top: 10px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  z-index: 3;
+  .flex-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  p {
+    color: $color-one;
+    font-family: $font-three;
+    line-height: 50px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .outer-nav {
+    display: flex;
+    line-height: 50px;
+    font-family: $font-two;
+    li {
+      padding-right: 20px;
+      text-transform: uppercase;
+      &:hover .inner-nav {
+        display: block;
+      }
+    }
+  }
+  .inner-nav {
+    display: none;
+    position: absolute;
+    text-align: center;
+  }
+}
+
+/* Splash */
+
+.splash {
+  display: flex;
+  position: relative;
+  background: url('https://images.pexels.com/photos/859895/pexels-photo-859895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  &::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.7;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+  }
+  .splash-inner {
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    h1 {
+      font-family: $font-two;
+      font-size: 5rem;
+      padding: 30px 0 80px 0;
+    }
+    h2 {
+      font-family: $font-two;
+    }
+    a {
+      background: $color-one;
+      text-decoration: none;
+      color: $color-three;
+      padding: 20px 25px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: $font-one;
+      letter-spacing: 2px;
+      border-radius: 5px;
+    }
+  }
 }
