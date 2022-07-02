@@ -201,11 +201,14 @@ nav {
   }
   .portfolio-items {
     .portfolio-item {
+      margin-top: 20px;
       display: flex;
       flex-direction: column;
-      margin: 20px 0;
-      height: 400px;
       text-align: center;
+      .portfolio-img {
+        height: 400px;
+        overflow: hidden;
+      }
       h4,
       p {
         background: $color-three;
